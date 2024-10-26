@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Lógica de Programação</title>
+</head>
+<body>
+  <h1>Calculadora de Soma</h1>
+  <p>Digite dois números para calcular a soma:</p>
+  
+  <input type="number" id="numero1" placeholder="Primeiro número">
+  <input type="number" id="numero2" placeholder="Segundo número">
+  
+  <button onclick="somar()">Calcular</button>
+  
+  <p id="resultado"></p>
+
+  <script>
+    // Função de lógica de programação para somar dois números
+    function somar() {
+      const numero1 = parseFloat(document.getElementById("numero1").value);
+      const numero2 = parseFloat(document.getElementById("numero2").value);
+      
+      if (isNaN(numero1) || isNaN(numero2)) {
+        document.getElementById("resultado").innerText = "Por favor, insira números válidos.";
+      } else {
+        const soma = numero1 + numero2;
+        document.getElementById("resultado").innerText = "Resultado: " + soma;
+      }
+    }
+  </script>
+</body>
+</html>

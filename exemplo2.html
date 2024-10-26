@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Tabela HTML5</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: left;
+      padding: 8px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Lista de Produtos e Preços</caption>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Loja A</th>
+        <th>Loja B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Produto 1</td>
+        <td>R$ 20,00</td>
+        <td>R$ 22,00</td>
+      </tr>
+      <tr>
+        <td>Produto 2</td>
+        <td>R$ 18,00</td>
+        <td>R$ 17,50</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Informações de rodapé</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
